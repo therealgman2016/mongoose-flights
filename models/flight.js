@@ -17,11 +17,10 @@ const flightSchema = new Schema({
         max: 9999
     },
     departs: {
-        type: Date,
-        default: Date.getFullYear() + 1
+        type: String
     }
 
 }, { timestamps: true }
 )
 
-module.exports = mongoose.model('Movie', movieSchema)
+module.exports = mongoose.model('Flight', flightSchema)
